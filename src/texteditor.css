@@ -1,0 +1,116 @@
+.bar {
+  background-color: #e6ecf9;
+}
+.dropDown {
+  background-color: transparent;
+  border: 0;
+  max-width: 140px;
+}
+.dropDown1 {
+  background-color: transparent;
+  border: 0;
+  max-width: 120px;
+}
+.vertical-line {
+  border-left: 2px solid rgb(46, 45, 45);
+  height: 19px;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+.editor-class {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid gray;
+
+  min-height: 1500px;
+
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 20%;
+  padding: 5%;
+}
+.design {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.design2 {
+  margin-left: 5px;
+  margin-right: 15px;
+}
+.design5 {
+  margin-left: 20px;
+}
+.design7 {
+  margin-left: 20px;
+}
+.design4 {
+  margin-left: 10px;
+}
+.design1 {
+  margin-right: 5px;
+}
+.icon {
+  padding: 10%;
+}
+
+.fontsizedeign {
+  border: 1px solid gray;
+  padding: 2px 10px;
+}
+
+.texteditor {
+  font-weight: 500;
+}
+.scrollable-container {
+  overflow-y: scroll;
+
+  max-height: 80vh; /* Adjust the height as needed */
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+.scrollable-container::-webkit-scrollbar-button {
+  border-radius: 50%;
+}
+.more {
+  margin-left: 10%;
+}
+.toolbar {
+  display: flex;
+  align-items: center;
+}
+
+.more-options-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .more-options-btn {
+    display: inline-block;
+  }
+}
+@media (max-width: 1200px) {
+  .mobileview {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .mobileview1 {
+    display: none;
+  }
+}
+
+.more-options-dropdown {
+  display: none;
+  /* Additional styling for the dropdown */
+}
+
+@media (max-width: 768px) {
+  .more-options-dropdown {
+    display: block;
+    /* Additional styling for the dropdown */
+  }
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}

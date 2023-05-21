@@ -1,0 +1,253 @@
+@tailwind components;
+
+@layer components {
+  .option {
+    @apply cursor-pointer hover:bg-gray-300 transition duration-200 ease-out p-2 rounded-lg;
+  }
+}
+@layer components {
+  .options {
+    @apply cursor-pointer hover:bg-gray-300 transition duration-200 ease-out p-2 rounded-full;
+  }
+}
+.message {
+  width: 60px;
+  margin-right: 1.5%;
+}
+.top {
+  width: 70px;
+  margin-right: 1.5%;
+}
+
+.sidebar {
+  margin-right: 20%;
+}
+.input {
+  border: none;
+  border-radius: 5%;
+  font-size: 20px;
+  color: rgb(69, 66, 66);
+  background-color: #f1f6f9;
+  border-color: black;
+}
+.subheader {
+  border-radius: 25px;
+  background-color: #d2e9e9;
+}
+.wrapper-class {
+  padding: 1rem;
+}
+.editor-class {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid gray;
+
+  min-height: 1500px;
+
+  margin-top: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 5%;
+}
+.google {
+  text-align: left;
+  margin-right: 2%;
+}
+
+.google-text {
+  display: none;
+  position: absolute;
+  top: 100%;
+  transform: translateX(-90%);
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5%;
+  color: #fff;
+  font-size: 16px;
+  white-space: nowrap;
+  visibility: hidden;
+  padding: 10% 15%;
+
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  z-index: 10;
+}
+.lock {
+  background-color: #c2e6fe;
+}
+
+.hover-button:hover + .google-text {
+  display: inline;
+  opacity: 1;
+  visibility: visible;
+}
+.popup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  z-index: 20;
+  width: 30%;
+  min-height: 30%;
+  border-radius: 10px;
+}
+.popup h1 {
+  font-size: 30px;
+  padding: 2% 5%;
+}
+.header1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header1 h1 {
+  margin-right: 10px;
+}
+
+.header1 button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.popup p {
+  padding: 2% 5%;
+}
+.skip {
+  background-color: white;
+  color: blue;
+  border-radius: 10%;
+  margin: 2%;
+}
+.save {
+  background-color: blue;
+  color: white;
+  border-radius: 10%;
+  margin: 2%;
+}
+.combin {
+  margin-left: 60%;
+  margin-top: 5%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+}
+
+.rdw-editor-toolbar {
+  background: #ecf2ff !important;
+  border-radius: 20px !important;
+}
+.rdw-option-wrapper {
+  background-color: transparent !important;
+}
+
+.image {
+  max-width: 45px;
+  margin-top: 10%;
+}
+@media (max-width: 600px) {
+  .share-text {
+    display: none;
+  }
+  .lock img {
+    margin-right: 0;
+  }
+}
+
+.hover-btn {
+  padding-top: 10%;
+}
+.photo img {
+  border-radius: 50%;
+  height: 40px;
+}
+.photo {
+  margin-left: 5%;
+  margin-right: 1%;
+}
+.custom-scrollbar {
+  overflow-y: scroll;
+
+  scrollbar-width: thin;
+  scrollbar-color: #eeeeee;
+  min-height: 1000px;
+  max-height: 2000px;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 100px;
+  background-color: #eeeeee;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #f1f6f9;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 20px;
+  margin-left: 20%;
+  padding-bottom: 20%;
+}
+.hover-container {
+  position: relative;
+}
+
+.hover-text {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 60%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: #2c3333;
+  border-radius: 10%;
+  color: #fff;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 50;
+  visibility: hidden;
+  padding: 5% 10%;
+
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  z-index: 10;
+}
+
+.hover-button:hover + .hover-text {
+  display: inline;
+  opacity: 1;
+  visibility: visible;
+}
+.hover-button {
+  margin-right: 2%;
+}
+
+@media (max-width: 600px) {
+  .menu1,
+  .message,
+  .options {
+    display: none !important ;
+  }
+  .share-text {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .share-text {
+    display: none;
+  }
+}
+
+/* Styles for screens with a minimum width of 601px */
+@media (min-width: 601px) {
+}
